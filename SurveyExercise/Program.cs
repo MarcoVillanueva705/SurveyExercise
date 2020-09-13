@@ -24,6 +24,9 @@ namespace SurveyExercise
     {
         static void Main(string[] args)
         {
+            // Create an object of the Data Class
+            var data = new Data();
+
             Console.WriteLine("What is your name?");
             var name = TryAnswer();
         }
