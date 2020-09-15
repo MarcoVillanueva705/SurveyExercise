@@ -11,6 +11,7 @@ namespace SurveyExercise
         public int Age;
         public string Month;
 
+        //void keyword won't return anything
         public void Display()
         {
             Console.WriteLine("Your name is: {0}", Name);
