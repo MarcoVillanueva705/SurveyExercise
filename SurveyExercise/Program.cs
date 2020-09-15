@@ -28,7 +28,14 @@ namespace SurveyExercise
             var data = new Data();
 
             Console.WriteLine("What is your name?");
-            var name = TryAnswer();
+            data.Name = TryAnswer();
+
+            Console.WriteLine("What is your age?");
+            data.Age = int.Parse(TryAnswer());
+
+            Console.WriteLine("What month were you born in?");
+            data.Month = TryAnswer();
+
         }
 
         static string TryAnswer()
