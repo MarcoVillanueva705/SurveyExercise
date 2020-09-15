@@ -17,6 +17,20 @@ namespace SurveyExercise
             Console.WriteLine("Your age is: {0}", Age);
             Console.WriteLine("Your birth month is: {0}", Month);
 
+            if (Month == "march")
+            {
+                Console.WriteLine("You are an Aries");
+            }
+            else if (Month == "april")
+            {
+                Console.WriteLine("You are an April sign");
+            }
+
+            else if (Month == "may")
+            {
+                Console.WriteLine("You are a Gemini");
+            }
+
         }
     }
 
@@ -36,19 +50,6 @@ namespace SurveyExercise
             Console.WriteLine("What month were you born in?");
             data.Month = TryAnswer();
 
-            if (month == "march")
-            {
-                Console.WriteLine("You are an Aries");
-            }
-            else if (month == "april")
-            {
-                Console.WriteLine("You are an April sign");
-            }
-
-            else if (month == "may")
-            {
-                Console.WriteLine("You are a Gemini");
-            }
             //this method will run once all questions answered
             data.Display();
         }
